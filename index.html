@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="App">
+      <header class="App-header__main">
+        <nav class="App-nav">
+          <a href="#" class="App-logo">
+            <img
+              src="./assets/img/you-tube-2017-seeklogo.com-4-01.png"
+              class="App-logo_img"
+            />
+          </a>
+
+          <div class="App-menu__option">
+            <ul class="App-menu__list">
+              <li class="App-menu__item active">
+                <a href="" class="App-menu__item-link">
+                  <i class="ri-home-3-line"></i>
+                  Home
+                </a>
+              </li>
+              <li class="App-menu__item">
+                <a href="" class="App-menu__item-link">
+                  <i class="ri-tv-line"></i>
+                  Trending
+                </a>
+              </li>
+              <li class="App-menu__item">
+                <a href="" class="App-menu__item-link">
+                  <i class="ri-youtube-fill"></i>
+                  Subcriptions
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="App-menu__option">
+            <ul class="App-menu__list">
+              <li class="App-menu__item">
+                <a href="" class="App-menu__item-link">
+                  <i class="ri-book-fill"></i>
+                  Library
+                </a>
+              </li>
+              <li class="App-menu__item">
+                <a href="" class="App-menu__item-link">
+                  <i class="ri-history-line"></i>
+                  History
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="App-menu__main">
+            <div class="App-menu__option-entertainment">
+              <ul class="App-menu__list">
+                <li class="App-menu__item">
+                  <a href="" class="App-menu__item-link">
+                    <i class="ri-file-music-fill"></i>
+                    Music
+                  </a>
+                </li>
+                <li class="App-menu__item">
+                  <a href="" class="App-menu__item-link">
+                    <i class="ri-football-line"></i>
+                    Sport
+                  </a>
+                </li>
+                <li class="App-menu__item">
+                  <a href="" class="App-menu__item-link">
+                    <i class="ri-gamepad-fill"></i>
+                    Gaming
+                  </a>
+                </li>
+                <li class="App-menu__item">
+                  <a href="" class="App-menu__item-link">
+                    <i class="ri-film-line"></i>
+                    Movie
+                  </a>
+                </li>
+                <li class="App-menu__item">
+                  <a href="" class="App-menu__item-link">
+                    <i class="ri-newspaper-fill"></i>
+                    News
+                  </a>
+                </li>
+                <li class="App-menu__item">
+                  <a href="" class="App-menu__item-link">
+                    <i class="ri-live-fill"></i>
+                    Live
+                  </a>
+                </li>
+                <li class="App-menu__item">
+                  <a href="" class="App-menu__item-link">
+                    <i class="ri-handbag-fill"></i>
+                    Fashion
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="App-menu__footer">
+          <span class="App-menu__footer-text">© 2022 YoutubeFake, LLC</span>
+        </div>
+      </header>
+      <div class="App-container">
+        <div class="App-container__header">
+          <div class="App-container__header-searchbox">
+            <input
+              type="text"
+              name=""
+              placeholder="Search"
+              class="Search-box"
+            />
+            <a href="" class="SearchBtn">
+              <i class="ri-search-line"></i>
+            </a>
+          </div>
+          <div class="App-container__header-option">
+            <div class="App-container__addVideo">
+              +
+              <i class="ri-video-add-line"></i>
+            </div>
+            <span class="App-container__signIn">Sign In</span>
+            <span class="App-container__mode" onclick="changeMode(this)"
+              ><i class="ri-moon-fill"></i
+            ></span>
+          </div>
+        </div>
+        <div class="App-container__slider">
+          <div class="slide first">
+            <img src="./assets/img/large_1631084442674_cfb5040129.jpg" />
+            <i class="ri-arrow-right-s-line btn next"></i>
+            <i class="ri-arrow-left-s-line btn prev"></i>
+          </div>
+          <div class="slide">
+            <img src="./assets/img/s1-1949jpg.jpg" />
+            <i class="ri-arrow-right-s-line btn next"></i>
+            <i class="ri-arrow-left-s-line btn prev"></i>
+          </div>
+          <div class="slide">
+            <img src="./assets/img/342.jpg" />
+            <i class="ri-arrow-right-s-line btn next"></i>
+            <i class="ri-arrow-left-s-line btn prev"></i>
+          </div>
+          <div class="slide">
+            <img src="./assets/img/YSN2168.jpg" />
+            <i class="ri-arrow-right-s-line btn next"></i>
+            <i class="ri-arrow-left-s-line btn prev"></i>
+          </div>
+          <div class="slide">
+            <img src="./assets/img/dims.jpg" />
+            <i class="ri-arrow-right-s-line btn next"></i>
+            <i class="ri-arrow-left-s-line btn prev"></i>
+          </div>
+        </div>
+        <h2 class="container__title">Recommemded</h2>
+        <div class="container__main">
+          <div class="grid wide">
+            <div class="row"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
